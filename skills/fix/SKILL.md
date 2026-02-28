@@ -7,7 +7,6 @@ description: >-
   or invokes /fix with an issue description. Investigates reported issues
   methodically and applies minimal, elegant fixes.
 argument-hint: <issue description>
-allowed-tools: Glob, Grep, Read, Edit, Bash(pnpm typecheck*), Bash(pnpm lint*)
 ---
 
 # Fix
@@ -54,8 +53,7 @@ Before making any changes:
 
 ### Verify the Fix
 
-- Run `pnpm typecheck` to ensure type safety
-- Run relevant lint checks if needed
+- Run the project's type-check, lint, or test commands as appropriate (e.g., `pnpm typecheck`, `cargo check`, `go vet`, `mypy`)
 - Confirm the fix resolves the root cause
 
 ## Constraints
@@ -63,7 +61,7 @@ Before making any changes:
 - **Minimal changes only** — do not add features, refactor unrelated code, or make "improvements" beyond the fix
 - **No over-engineering** — solve the specific problem, not hypothetical future issues
 - **Elegant solutions** — prefer simple, clear fixes over complex ones
-- **Type safety** — ensure all changes pass TypeScript checks
+- **Type safety** — ensure all changes pass the project's type checks or compiler
 - **Root cause focus** — fix the underlying issue, not just the symptoms
 
 ## Output
