@@ -1,4 +1,4 @@
-# dev-plugin
+# claude-plugin
 
 Developer workflow skills for Claude Code.
 
@@ -27,12 +27,12 @@ Investigate and fix reported issues with minimal, targeted changes. Follows a ph
 Add the marketplace and install the plugin:
 
 ```bash
-/plugin marketplace add lilac/dev-plugin
-/plugin install dev@dev-plugin
+/plugin marketplace add lilac/claude-plugin
+/plugin install dev@claude-plugin
 ```
 
 Or for local development:
 
 ```bash
-claude --plugin-dir /path/to/dev-plugin
+claude --plugin-dir /path/to/claude-plugin
 ```
