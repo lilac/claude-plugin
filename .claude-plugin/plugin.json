@@ -1,0 +1,10 @@
+{
+  "name": "dev-plugin",
+  "version": "0.1.0",
+  "description": "Developer workflow skills for git commits and issue fixing",
+  "author": {
+    "name": "lilac"
+  },
+  "license": "MIT",
+  "keywords": ["git", "commit", "fix", "workflow", "developer-tools"]
+}
