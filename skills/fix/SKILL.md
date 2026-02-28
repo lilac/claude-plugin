@@ -7,6 +7,7 @@ description: >-
   or invokes /fix with an issue description. Investigates reported issues
   methodically and applies minimal, elegant fixes.
 argument-hint: <issue description>
+allowed-tools: Bash Grep Glob Read Edit Write
 ---
 
 # Fix

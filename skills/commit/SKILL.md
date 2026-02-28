@@ -6,6 +6,7 @@ description: >-
   or invokes /commit. Generates terse, precise conventional commit messages
   from staged or unstaged git changes.
 argument-hint: [extra instructions]
+allowed-tools: Bash(git status:*) Bash(git diff:*) Bash(git add:*) Bash(git commit:*)
 ---
 
 # Commit
