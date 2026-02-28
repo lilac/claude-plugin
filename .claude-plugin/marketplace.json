@@ -1,0 +1,19 @@
+{
+  "name": "dev-plugin",
+  "owner": {
+    "name": "lilac"
+  },
+  "metadata": {
+    "description": "Developer workflow skills for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "dev",
+      "source": "./",
+      "description": "Developer workflow skills for git commits and issue fixing",
+      "version": "0.1.0",
+      "category": "productivity",
+      "tags": ["git", "commit", "fix", "workflow"]
+    }
+  ]
+}

@@ -24,6 +24,15 @@ Investigate and fix reported issues with minimal, targeted changes. Follows a ph
 
 ## Installation
 
+Add the marketplace and install the plugin:
+
+```bash
+/plugin marketplace add lilac/dev-plugin
+/plugin install dev@dev-plugin
+```
+
+Or for local development:
+
 ```bash
 claude --plugin-dir /path/to/dev-plugin
 ```
