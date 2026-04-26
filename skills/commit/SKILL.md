@@ -34,11 +34,20 @@ type(scope): concise description
 
 Be specific about *what* changed, not *how* or *why*. Example: `feat(chat): add message streaming support`
 
+### Long Bodies (non-fix commits)
+
+When a commit affects multiple distinct areas and a body helps, use a bullet list — one item per area, one sentence each:
+
+```
+feat(chat): add message streaming and retry support
+
+- Streaming: open an SSE connection and flush tokens as they arrive
+- Retry: re-send on transient network errors with exponential backoff
+```
+
 ### Fix Commits
 
-For fix commits, include a brief body explaining the root cause. Keep each line to one sentence max.
-
-Consult `references/fix-commit-formats.md` for single-issue and multi-issue body format examples.
+For fix commits, always include a body. Follow the format in [fix-commit-formats.md](./references/fix-commit-formats.md) for single-issue and multi-issue examples.
 
 ### Extra Instructions
 
