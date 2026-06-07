@@ -11,7 +11,7 @@
       "name": "dev",
       "source": "./",
       "description": "Developer workflow skills for git commits and issue fixing",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "category": "productivity",
       "tags": ["git", "commit", "fix", "workflow"]
     }

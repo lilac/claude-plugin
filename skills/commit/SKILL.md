@@ -32,17 +32,26 @@ type(scope): concise description
 
 **Type prefixes**: `feat`, `fix`, `refactor`, `docs`, `style`, `test`, `chore`
 
-Be specific about *what* changed, not *how* or *why*. Example: `feat(chat): add message streaming support`
+Be specific about *what* changed and its intent, not the line-by-line *how*. Example: `feat(chat): add message streaming support`
+
+### Body Style (applies to every body)
+
+Bodies are for humans skimming `git log`. Keep them scannable — follow these strictly:
+
+- **Prefer intent over code details.** Say what the change accomplishes and why it matters, not which functions, files, or lines moved. The diff already shows the mechanics; don't restate them.
+- **One short sentence per bullet.** Aim for ~12 words. If a bullet needs a "and"/comma to keep going, split it or cut the second half.
+- **Never write long paragraphs.** This is a hard rule. A body is always a short bullet (or numbered) list — never a wall of prose. If you find yourself writing a multi-sentence paragraph, stop and convert it to bullets.
+- **Only add a body when it earns its place.** A clear subject line often stands alone; don't pad with a body that just rephrases it.
 
 ### Long Bodies (non-fix commits)
 
-When a commit affects multiple distinct areas and a body helps, use a bullet list — one item per area, one sentence each:
+When a commit affects multiple distinct areas and a body helps, use a bullet list — one item per area, one short sentence each, describing the intent rather than the implementation:
 
 ```
 feat(chat): add message streaming and retry support
 
-- Streaming: open an SSE connection and flush tokens as they arrive
-- Retry: re-send on transient network errors with exponential backoff
+- Streaming: show assistant tokens as they arrive instead of after completion
+- Retry: recover automatically from transient network failures
 ```
 
 ### Fix Commits

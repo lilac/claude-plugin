@@ -30,7 +30,8 @@ fix(chat): document tool type and message gaps
 
 ## Guidelines
 
-- Keep each line concise (one sentence max)
+- Keep each line concise — one short sentence, ~12 words
 - Always include root cause and fix lines
-- Use plain, specific language — describe the actual code change
+- Describe the change at the level of intent: enough to understand the bug and the remedy, not a line-by-line account
+- Never collapse the body into a prose paragraph — keep the bullet/numbered structure
 - The subject line states the symptom; the body explains the cause
